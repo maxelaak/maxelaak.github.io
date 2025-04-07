@@ -132,7 +132,7 @@ nav ul li a:hover {
     box-shadow: 0 6px 12px var(--background-color);
 }
 
-/* My Work Section */
+/* Projects Section */
 #projects {
     background-color: var(--primary-color);
     padding: 4rem 1rem;
@@ -140,7 +140,7 @@ nav ul li a:hover {
 }
 
 #projects h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -153,7 +153,7 @@ nav ul li a:hover {
 }
 
 .pdf-container h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
