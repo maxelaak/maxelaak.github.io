@@ -79,7 +79,7 @@ h1, h2, h3 {
 }
 
 a {
-    color: var(--title-color);
+    color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -91,7 +91,7 @@ a:hover {
 /* Header Section */
 header {
     background-color: var(--secondary-color);
-    color: var(--title-color);
+    color: var(--text-color);
     padding: 1rem;
     position: fixed;
     left: 0;
@@ -117,7 +117,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FFD700;
+    color: var(--title-color);
 }
 
 /* Home Section */
@@ -166,7 +166,7 @@ nav ul li a:hover {
 
 /* My Work Section */
 #projects {
-    background-color: #fff;
+    background-color: var(--primary-color);
     padding: 4rem 1rem;
     text-align: center;
 }
@@ -178,10 +178,10 @@ nav ul li a:hover {
 
 .pdf-container {
     margin-bottom: 3rem;
-    background-color: #f9f9f9;
+    background-color: var(--primary-color);
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--secondary-color);
 }
 
 .pdf-container h3 {
@@ -195,21 +195,21 @@ iframe {
 }
 
 iframe:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px var(--background-color);
 }
 
 /* Work Experience Section */
 
 #experience {
-    background-color: #007BFF;
+    background-color: var(--primary-color);
     padding: 4rem 1rem;
     text-align: center;
 }
 
 /* Footer Section */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
     padding: 2rem 1rem;
     text-align: center;
 }
@@ -226,12 +226,12 @@ footer ul {
 }
 
 footer ul li a {
-    color: #fff;
+    color: var(--text-color);
     font-size: 1.2rem;
 }
 
 footer ul li a:hover {
-    color: #FFD700;
+    color: var(--title-color);
 }
 
 /* Mobile Styles */
