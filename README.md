@@ -1,7 +1,6 @@
 # maxelaak.github.io
 
 # Portfolio Website - Student GitHub Practice
-### Max Laak
 
 ## Overview
 
