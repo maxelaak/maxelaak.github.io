@@ -6,7 +6,7 @@
 
 :root {
     --primary-color: #f4f4f2;
-    --secondary-color: #e6e6e0;
+    --secondary-color: #FFE6C7;
     --background-color: #B7B7B7;
     --text-color:  #0f0f0f;
     --title-color: #d76851;
@@ -68,30 +68,30 @@
   }  
 
 body {
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    color: #2d2d2d;
+    color: var(--text-color);
     font-weight: 600;
 }
 
 a {
-    color: #007BFF;
+    color: var(--title-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3;
+    color: var(--title-color);
 }
 
 /* Header Section */
 header {
-    background-color: var(--primary-color);
-    color: var(--text-color);
+    background-color: var(--secondary-color);
+    color: var(--title-color);
     padding: 1rem;
     position: fixed;
     left: 0;
@@ -122,8 +122,8 @@ nav ul li a:hover {
 
 /* Home Section */
 #home {
-    background-color: #007BFF;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
     text-align: center;
     padding: 5rem 1rem;
 }
@@ -139,7 +139,8 @@ nav ul li a:hover {
 
 /* About Section */
 #about {
-    background-color: #fff;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     padding: 4rem 1rem;
     text-align: center;
 }
