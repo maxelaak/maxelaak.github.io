@@ -60,13 +60,18 @@ header {
     display: none;
     cursor: pointer;
     flex-direction: column;
-    gap: .5rem;
+    gap: 2px;
+    align-items: flex-end;
+    justify-content: space-around;
 }
 
 #nav .hamburger span {
-    width: 2rem;
-    height: 2.5rem;
-    background-color: var(--background-color);
+    width: 30px;
+    height: 6px;
+    background-color: var(--text-color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul {
@@ -248,10 +253,12 @@ footer ul li a:hover {
     
     #nav .hamburger {
         display: flex;
+        margin: 0;
+        padding: 0;
     }
 
     #nav.active .menu {
-        display: flex ;
+        display: flex;
     }
 
     nav ul {
