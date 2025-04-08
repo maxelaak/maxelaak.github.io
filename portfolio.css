@@ -63,6 +63,10 @@ header {
     gap: 2px;
     align-items: flex-end;
     justify-content: space-around;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+
 }
 
 #nav .hamburger span {
