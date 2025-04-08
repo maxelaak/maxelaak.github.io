@@ -22,13 +22,27 @@
 
     <!-- Header Section -->
     <header>
-        <nav>
-            <ul>
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const nav = document.getElementById('nav');
+
+            // Toggle the 'active' class when the hamburger is clicked
+            hamburger.addEventListener('click', function () {
+            nav.classList.toggle('active');
+            });
+        </script>
+        <nav id="nav">
+            <ul id="menu" class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Work Experience</a></li>
             </ul>
+            <div id="hamburger" class="hamburger">
+                <span>option 1</span>
+                <span>option 2</span>
+                <span>option 3</span>
+            </div>
         </nav>
     </header>
 
