@@ -46,10 +46,10 @@ a:hover {
 }
 
 /* Header Section */
+
 header {
     background-color: var(--secondary-color);
     padding: 1rem;
-    position: fixed;
     width: 100%;
 }
 
@@ -63,9 +63,8 @@ header {
     display: none; /* Hidden unless screen width goes under 768px */
     cursor: pointer;
     flex-direction: column;
-    gap: 2px;
+    gap: 0.125rem;
     align-items: flex-end;
-    position: flex;
 }
 
 #nav .hamburger span {
@@ -75,18 +74,17 @@ header {
 }
 
 #nav ul {
-    padding: 0;
+    padding: 0; /* removes browser default margin and paddings */
     margin: 0;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+    flex-wrap: wrap; /* allows the list contents to wrap into multiple lines if one line is not enough */
+    justify-content: center; /* used to justify list in center of flex container */
+}
 
 #nav ul li {
-    margin: 10px;
+    margin: .6rem;
 }
 
 #nav ul li a {
-    color: var(--text-color);
     font-size: 1.5rem;
 }
 
@@ -95,26 +93,25 @@ header {
 }
 
 /* Home Section */
+
 #home {
     background-color: var(--secondary-color);
-    color: var(--text-color);
     text-align: center;
-    padding: 5rem 1rem;
 }
 
 #home h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: .5rem;
 }
 
-#home p {
-    font-size: 1.5rem;
+#logos {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);    
 }
 
 /* About Section */
+
 #about {
     background-color: var(--primary-color);
-    color: var(--text-color);
     padding: 4rem 1rem;
     text-align: center;
 }
