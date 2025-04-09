@@ -1,11 +1,11 @@
 /* Global Styles */
 
 :root {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /*prevents webpage from snapping to links */
 }
 
 :root {
-    --primary-color: #f4f4f2;
+    --primary-color: #f4f4f2; /*color variables for page */
     --secondary-color: #FFE6C7;
     --background-color: #B7B7B7;
     --text-color:  #0f0f0f;
@@ -13,27 +13,32 @@
 }
 
 * {
-    margin: 0;
+    margin: 0; /* setting margin and padding to 0 removes browser defaults for consistency */
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* easier to size elements due to browser including padding and borders */
     font-family: "Ubuntu", sans-serif;
+    font-size: 16px; /*16px is my prefered font size for rem() function */
 }
 
 body {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); 
     color: var(--text-color);
-    line-height: 1.6;
+    line-height: 1.6rem; /* all units will be given in rem instead of pixels for responsive design */ 
 }
 
 h1, h2, h3 {
     color: var(--text-color);
-    font-weight: 600;
+    font-weight: 600; /* value from 1-1000 dictating boldness of font */
+}
+
+p {
+    color: var(--text-color);
 }
 
 a {
     color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
+    text-decoration: none; /* removes underline from links */
+    transition: color 0.5s ease; /* gives nice effect when links are hovered */
 }
 
 a:hover {
@@ -43,58 +48,49 @@ a:hover {
 /* Header Section */
 header {
     background-color: var(--secondary-color);
-    color: var(--text-color);
     padding: 1rem;
     position: fixed;
-    left: 0;
     width: 100%;
 }
 
 #nav .menu {
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 #nav .hamburger {
-    display: none;
+    display: none; /* Hidden unless screen width goes under 768px */
     cursor: pointer;
     flex-direction: column;
     gap: 2px;
     align-items: flex-end;
-    justify-content: space-around;
-    position: absolute;
-    top: 6px;
-    right: 10px;
-
+    position: flex;
 }
 
 #nav .hamburger span {
-    width: 30px;
-    height: 6px;
+    width: 2.2rem;
+    height: .4rem;
     background-color: var(--text-color);
-    text-align: center;
-    margin: 0;
-    padding: 0;
 }
 
-nav ul {
+#nav ul {
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-nav ul li {
+#nav ul li {
     margin: 10px;
 }
 
-nav ul li a {
+#nav ul li a {
     color: var(--text-color);
     font-size: 1.5rem;
 }
 
-nav ul li a:hover {
+#nav ul li a:hover {
     color: var(--title-color);
 }
 
@@ -124,14 +120,11 @@ nav ul li a:hover {
 }
 
 #about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 0;
     color: var(--text-color);
 }
 
 #about p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    color: var(--text-color);
 }
 
 .fa-brands {
@@ -179,8 +172,13 @@ nav ul li a:hover {
     margin-bottom: 2rem;
 }
 
-.pdf-container {
-    margin-bottom: 3rem;
+#projects h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.portfolioDocument {
+    margin-bottom: 2rem;
     background-color: var(--primary-color);
     padding: 1rem;
     border-radius: 8px;
@@ -190,18 +188,6 @@ nav ul li a:hover {
     align-items: center; 
     height: auto;
     max-width: 100%;
-}
-
-.pdf-container h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-iframe {
-    border: none;
-    border-radius: 8px;
-    max-width: 768px;
-
 }
 
 iframe:hover {
