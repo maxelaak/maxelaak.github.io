@@ -26,13 +26,28 @@ body {
     line-height: 1.6rem; /* all units will be given in rem instead of pixels for responsive design */ 
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
 h1, h2, h3 {
     color: var(--text-color);
     font-weight: 600; /* value from 1-1000 dictating boldness of font */
+    padding: .5rem;
 }
 
 p {
+    font-size: 1.1rem;
     color: var(--text-color);
+    margin: .25rem;
 }
 
 a {
@@ -92,16 +107,21 @@ header {
     color: var(--title-color);
 }
 
+.fa-brands { /*linkedin and github logo hyperlinks */
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.fa-brands:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
 /* Home Section */
 
 #home {
     background-color: var(--secondary-color);
     text-align: center;
-}
-
-#home h1 {
-    font-size: 2rem;
-    margin-bottom: .5rem;
 }
 
 #logos {
@@ -112,109 +132,90 @@ header {
 
 #about {
     background-color: var(--primary-color);
-    padding: 4rem 1rem;
+    margin: 2rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#about h2 {
-    color: var(--text-color);
-}
-
-#about p {
-    color: var(--text-color);
-}
-
-.fa-brands {
-    font-size: 4rem;
-    padding: 1rem;
-}
-
-.fa-solid {
+.fa-solid { /* hammer icon*/
     font-size: 2rem;
     padding: 1rem;
 }
 
-#about img:hover{
+#about img:hover { /*profile pic animations */
     transition: transform 0.3s ease;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
-.profile {
+#headshot {
     display: flex;
     align-items: center;
-    gap: 20px;
     justify-content: center;
     padding: 1rem;
 }
 
-.profile-photo {
+#profile-photo {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin: 0 auto;
+    width: 9.3rem;
+    height: 9.3rem;
     border: 1px solid var(--secondary-color);
     box-shadow: 0 6px 12px var(--background-color);
 }
 
 /* Projects Section */
 #projects {
-    background-color: var(--primary-color);
-    padding: 4rem 1rem;
+    background-color: var(--secondary-color);
+    padding: 1rem;
     text-align: center;
-}
-
-#projects h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-#projects h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolioDocument {
-    margin-bottom: 2rem;
     background-color: var(--primary-color);
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px var(--secondary-color);
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: .4rem;
     display: flex;
     justify-content: center;
     align-items: center; 
     height: auto;
-    max-width: 100%;
-}
-
-iframe:hover {
-    box-shadow: 0 4px 10px var(--background-color);
 }
 
 /* Work Experience Section */
 
 #experience {
     background-color: var(--primary-color);
-    padding: 4rem 1rem;
+    padding: 1rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Footer Section */
+
 footer {
     background-color: var(--secondary-color);
-    color: var(--text-color);
-    padding: 2rem 1rem;
+    padding: 1rem;
     text-align: center;
-}
-
-footer p {
-    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -228,7 +229,7 @@ footer ul li a:hover {
 }
 
 /* Mobile Styles */
-@media  (max-width: 768px) {
+@media  (max-width: 40rem) {
     header {
         padding: 1rem;
     }
@@ -240,6 +241,8 @@ footer ul li a:hover {
     
     #nav .hamburger {
         display: flex;
+        justify-content: center;
+        align-items: flex-end;
         margin: 0;
         padding: 0;
     }
@@ -249,45 +252,13 @@ footer ul li a:hover {
     }
 
     nav ul {
-        gap: 1rem;
         align-items: center;
-        
-    }
-
-    nav li {
-        margin: 5px 0;
-    }
-
-    #home h1 {
-        font-size: 2.5rem;
-    }
-
-    #home p {
-        font-size: 1.2rem;
-    }
-
-    .profile{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-photo{
-        margin-bottom: 15px;
-        width: 120px;
-        height: 120px;
-    }
-
-    .project-gallery {
-        grid-template-columns: 1fr;
-    }
-
-    form {
-        width: 100%;
     }
 
 }
 
 /* Font Family */
+
 .ubuntu-light {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
