@@ -50,6 +50,10 @@ p {
     margin: .25rem;
 }
 
+b {
+    font-size: 1.1rem;
+}
+
 a {
     color: var(--text-color);
     text-decoration: none; /* removes underline from links */
@@ -186,6 +190,17 @@ header {
     align-items: center; 
     height: auto;
 }
+
+.exampleproject {
+    margin-top: 2rem;
+}
+
+iframe {
+    margin: 0rem;
+}
+
+
+
 
 /* Work Experience Section */
 
