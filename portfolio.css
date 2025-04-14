@@ -70,7 +70,7 @@ a:hover {
 header {
     background-color: var(--secondary-color);
     padding: 1rem;
-    width: 100%;
+
 }
 
 #nav .menu {
@@ -137,7 +137,7 @@ header {
 
 #about {
     background-color: var(--primary-color);
-    margin: 2rem;
+    margin: 0rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -252,6 +252,13 @@ footer ul li a:hover {
 
 /* Mobile Styles */
 @media  (max-width: 40rem) {
+    *{
+        width: 100%;
+    }
+
+    p {padding-top: 1rem;
+    }
+
     header {
         padding: 1rem;
     }
@@ -276,6 +283,8 @@ footer ul li a:hover {
     nav ul {
         align-items: center;
     }
+
+
 
 }
 
