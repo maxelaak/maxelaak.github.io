@@ -15,6 +15,8 @@
 * {
     margin: 0; /* setting margin and padding to 0 removes browser defaults for consistency */
     padding: 0;
+    width: 100%;
+
     box-sizing: border-box; /* easier to size elements due to browser including padding and borders */
     font-family: "Ubuntu", sans-serif;
     font-size: 16px; /*16px is my prefered font size for rem() function */
@@ -137,7 +139,7 @@ header {
 
 #about {
     background-color: var(--primary-color);
-    margin: 2rem;
+    margin: 0rem;
     text-align: center;
     display: flex;
     flex-direction: column;
