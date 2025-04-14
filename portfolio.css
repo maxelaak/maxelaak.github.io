@@ -23,7 +23,7 @@
 body {
     background-color: var(--primary-color); 
     color: var(--text-color);
-    line-height: 1.6rem; /* all units will be given in rem instead of pixels for responsive design */ 
+    line-height: 2rem; /* all units will be given in rem instead of pixels for responsive design */ 
 }
 
 h1 {
@@ -159,8 +159,8 @@ header {
 
 #profile-photo {
     border-radius: 50%;
-    width: 9.3rem;
-    height: 9.3rem;
+    width: 14rem;
+    height: 14rem;
     border: 1px solid var(--secondary-color);
     box-shadow: 0 6px 12px var(--background-color);
 }
