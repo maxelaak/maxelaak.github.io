@@ -179,6 +179,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .portfolioDocument {
@@ -193,6 +194,7 @@ header {
     width: 100%;
     padding-top: 2rem;
 }
+
 
 .exampleproject {
     margin-top: 2rem;

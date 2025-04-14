@@ -85,7 +85,7 @@
             </iframe>
         </div>
     </div>
-    <div class="exampleproject">
+    <div class="MiddleProject">
             <h2>Video tutorial on creating isometric shapes</h2>
             <p> I created this short 2 minute tutorial to try out a free <b>AI voiceover</b> program called Ttsmaker.</P>
             <p> I used <b>Adobe Illustrator</b> to create the vector image, <b>Premier Pro</b> to edit the video, and <b>Snagit </b> for screen capture. </p>
@@ -95,7 +95,7 @@
                      src="https://www.youtube.com/embed/w8Gl0z05yQU" 
                      title="YouTube video player" 
                      frameborder="0" 
-                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                      allowfullscreen>
                     </iframe>
                 </div>
@@ -125,7 +125,7 @@
     <!-- Footer Section -->
     <footer>
         <h2>Contact</h2>
-            <p class="email"> maximilianlaak@gmail.com </p>
+            <p class="email"> maximilianlaak@gmail.com </class></p>
         <ul>
             <li><a href="https://www.linkedin.com/in/maxlaak" target="_blank">LinkedIn</a></li>
             <li><a href="https://github.com/maxelaak/maxelaak.github.io" target="_blank">GitHub</a></li>
@@ -141,7 +141,14 @@ const nav = document.getElementById('nav');
 hamburger.addEventListener('click', function () {
   nav.classList.toggle('active');
 });
-</script>  
+</script>
 
+
+<script>
+    // Stop autoscroll to pdf
+    window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
+    });
+  </script>
 </body>
 </html>
