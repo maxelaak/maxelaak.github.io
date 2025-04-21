@@ -21,7 +21,7 @@
 }
 
 body {
-    background-color: var(--primary-color); 
+    background-color: var(--secondary-color); 
     color: var(--text-color);
     line-height: 2rem; /* all units will be given in rem instead of pixels for responsive design */ 
 }
@@ -32,6 +32,7 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+    padding-top: 1rem;
 }
 
 h3 {
@@ -41,13 +42,17 @@ h3 {
 h1, h2, h3 {
     color: var(--text-color);
     font-weight: 600; /* value from 1-1000 dictating boldness of font */
-    padding: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 p {
     font-size: 1.1rem;
     color: var(--text-color);
-    margin: .25rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 b {
@@ -69,8 +74,13 @@ a:hover {
 
 header {
     background-color: var(--secondary-color);
-    padding: 1rem;
+    margin: 0;
+    padding: 0;
 
+}
+
+.AboutMe{
+    padding-top: 1rem;
 }
 
 #nav .menu {
@@ -138,6 +148,7 @@ header {
 #about {
     background-color: var(--primary-color);
     margin: 0rem;
+    padding: 0rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -173,7 +184,8 @@ header {
 /* Projects Section */
 #projects {
     background-color: var(--secondary-color);
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -182,19 +194,43 @@ header {
     width: 100%;
 }
 
+
 .portfolioDocument {
     background-color: var(--secondary-color);
-    padding: .5rem;
-    margin: .5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     border-radius: .4rem;
     display: flex;
     justify-content: center;
     align-items: center; 
     height: auto;
     width: 100%;
-    padding-top: 2rem;
 }
 
+.MiddlePortfolioDocument{
+    background-color: var(--primary-color);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: .4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: auto;
+    width: 100%;
+}
+
+.TopProject {
+    background:var(--secondary-color);
+}
+
+.MiddleProject {
+    background:var(--primary-color);
+    width: 100%;
+}
+
+.BottomProject {
+    background:var(--secondary-color);
+}
 
 .exampleproject {
     margin-top: 2rem;
@@ -207,7 +243,7 @@ iframe {
 
 
 
-/* Work Experience Section */
+/* Work Experience Section
 
 #experience {
     background-color: var(--primary-color);
@@ -218,17 +254,18 @@ iframe {
     justify-content: center;
     align-items: center;
 }
+*/
 
 /* Footer Section */
 
 footer {
     background-color: var(--secondary-color);
-    padding: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 footer ul {
