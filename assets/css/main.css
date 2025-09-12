@@ -3083,6 +3083,8 @@ input, select, textarea {
 		#header p {
 			font-size: 1.25em;
 			letter-spacing: -0.025em;
+			display: inline;
+			padding: 0em 1em;
 		}
 
 		#header.alt {
